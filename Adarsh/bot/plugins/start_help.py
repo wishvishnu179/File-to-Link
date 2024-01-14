@@ -28,9 +28,8 @@ async def start(b, m):
             text="**ʜᴇʟʟᴏ...⚡\n\nɪᴀᴍ ᴀ sɪᴍᴘʟᴇ ᴛᴇʟᴇɢʀᴀᴍ ғɪʟᴇ/ᴠɪᴅᴇᴏ ᴛᴏ ᴘᴇʀᴍᴀɴᴇɴᴛ ʟɪɴᴋ ᴀɴᴅ sᴛʀᴇᴀᴍ ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴛ.**\n\n**ᴜsᴇ /help ғᴏʀ ᴍᴏʀᴇ ᴅᴇᴛsɪʟs\n\nsᴇɴᴅ ᴍᴇ ᴀɴʏ ᴠɪᴅᴇᴏ / ғɪʟᴇ ᴛᴏ sᴇᴇ ᴍʏ ᴘᴏᴡᴇʀᴢ...**",
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("⚡ UPDATES", url="https://t.me/beta_botz"), InlineKeyboardButton("⚡ SUPPORT", url="https://t.me/beta_support")],
-                    [InlineKeyboardButton("OWNER", url="https://t.me/jeol_tg")],
-                    [InlineKeyboardButton("💌 SUBSCRIBE 💌", url="https://youtube.com/@itzjeol")]
+                    [InlineKeyboardButton("⚡ UPDATES", url="https://t.me/TGCinemaworld"), InlineKeyboardButton("⚡ SUPPORT", url="https://t.me/Tgcinemaworld")],
+                    [InlineKeyboardButton("OWNER", url="https://t.me/Vishnudhfm14")]
                 ]
             ),
             
@@ -84,9 +83,8 @@ async def help_handler(bot, message):
         
         reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("⚡ UPDATES ⚡", url="https://t.me/beta_botz"), InlineKeyboardButton("⚡ SUPPORT ⚡", url="https://t.me/beta_support")],
-                    [InlineKeyboardButton("OWNER", url="https://t.me/jeol_tg"), InlineKeyboardButton("💠 DEVELOPER", url="https://github.com/Adarsh-Goel")],
-                    [InlineKeyboardButton("💌 SUBSCRIBE 💌", url="https://youtube.com/@itzjeol")]
+                    [InlineKeyboardButton("⚡ UPDATES ⚡", url="https://t.me/Tgcinemaworld"), InlineKeyboardButton("⚡ SUPPORT ⚡", url="https://t.me/Tgcinemaworld")],
+                    [InlineKeyboardButton("OWNER", url="https://t.me/vishnudhfm14")
                 ]
             ),
             
@@ -106,23 +104,20 @@ async def about_handler(bot, message):
 
 <b>╭━━━━━━━〔ғɪʟᴇ ᴛᴏ ʟɪɴᴋ ʙᴏᴛ〕</b>
 ┃
-┣⪼<b>ʙᴏᴛ ɴᴀᴍᴇ : ғɪʟᴇ ᴛᴏ ʟɪɴᴋ
-┣⪼<b>ᴜᴘᴅᴀᴛᴇᴢ : <a href='https://t.me/beta_botz'>jeol botz</a></b>
-┣⪼<b>sᴜᴘᴘᴏʀᴛ : <a href='https://t.me/beta_support'>jeol support</a></b>
-┣⪼<b>sᴇʀᴠᴇʀ : ʜᴇʀᴜᴋᴏ</b>
-┣⪼<b>ʟɪʙʀᴀʀʏ : ᴘʏʀᴏɢʀᴀᴍ</b>
-┣⪼<b>ʟᴀɴɢᴜᴀɢᴇ: ᴘʏᴛʜᴏɴ 3</b>
-┣⪼<b>ʏᴏᴜᴛᴜʙᴇ : <a href='https://youtube.com/@itzjeol'>Jeol botz</a></b>
+┣⪼<b>Bᴏᴛ Nᴀᴍᴇ : File To Direct Link
+┣⪼<b>Sᴇʀᴠᴇʀ : ʜᴇʀᴜᴋᴏ</b>
+┣⪼<b>Lɪʙʀᴀʀʏ: ᴘʏʀᴏɢʀᴀᴍ</b>
+┣⪼<b>Lᴀɴɢᴜɢᴀɢᴇ: ᴘyᴛʜᴏɴ 3</b>
+┣⪼<b>Oᴡɴᴇʀ: <a href='https://youtube.com/@itzjeol'>Jeol botz</a></b>
 ┃
 <b>╰━━━━━━━〔ᴘʟᴇᴀsʀ sᴜᴘᴘᴏʀᴛ〕</b>""",
   
         
         reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("⚡ UPDATES ⚡", url="https://t.me/beta_botz"), InlineKeyboardButton("⚡ SUPPORT ⚡", url="https://t.me/beta_support")],
-                    [InlineKeyboardButton("OWNER", url="https://t.me/jeol_tg"), InlineKeyboardButton("💠 DEVELOPER", url="https://github.com/Adarsh-Goel")],
-                    [InlineKeyboardButton("💌 SUBSCRIBE 💌", url="https://youtube.com/@itzjeol")]
-                ]
+                    [InlineKeyboardButton("⚡ UPDATES ⚡", url="https://t.me/TGCinemaworld"), InlineKeyboardButton("⚡ SUPPORT ⚡", url="https://t.me/Tgcinemaworld")],
+                    [InlineKeyboardButton("OWNER", url="https://t.me/vishnudhfm14")
+                 ]
             ),
             
         )
