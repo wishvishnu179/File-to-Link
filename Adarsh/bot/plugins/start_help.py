@@ -84,7 +84,7 @@ async def help_handler(bot, message):
         reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton("⚡ UPDATES ⚡", url="https://t.me/Tgcinemaworld"), InlineKeyboardButton("⚡ SUPPORT ⚡", url="https://t.me/Tgcinemaworld")],
-                    [InlineKeyboardButton("OWNER", url="https://t.me/vishnudhfm14")
+                    [InlineKeyboardButton("OWNER", url="https://t.me/vishnudhfm14")]
                 ]
             ),
             
@@ -116,7 +116,7 @@ async def about_handler(bot, message):
         reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton("⚡ UPDATES ⚡", url="https://t.me/TGCinemaworld"), InlineKeyboardButton("⚡ SUPPORT ⚡", url="https://t.me/Tgcinemaworld")],
-                    [InlineKeyboardButton("OWNER", url="https://t.me/vishnudhfm14")
+                    [InlineKeyboardButton("OWNER", url="https://t.me/vishnudhfm14")]
                  ]
             ),
             
