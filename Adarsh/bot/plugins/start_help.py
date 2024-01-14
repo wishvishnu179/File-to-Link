@@ -105,10 +105,10 @@ async def about_handler(bot, message):
 <b>╭━━━━━━━〔ғɪʟᴇ ᴛᴏ ʟɪɴᴋ ʙᴏᴛ〕</b>
 ┃
 ┣⪼<b>Bᴏᴛ Nᴀᴍᴇ : File To Direct Link
-┣⪼<b>Sᴇʀᴠᴇʀ : ʜᴇʀᴜᴋᴏ</b>
+┣⪼<b>Oᴡɴᴇʀ: <a href='https://t.me/vishnudhfm14'>𝐕𝐢𝐬𝐡𝐧𝐮 𝐌𝐁🤍</a></b>
 ┣⪼<b>Lɪʙʀᴀʀʏ: ᴘʏʀᴏɢʀᴀᴍ</b>
 ┣⪼<b>Lᴀɴɢᴜɢᴀɢᴇ: ᴘyᴛʜᴏɴ 3</b>
-┣⪼<b>Oᴡɴᴇʀ: <a href='https://youtube.com/@itzjeol'>Jeol botz</a></b>
+┣⪼<b>Sᴇʀᴠᴇʀ: ʜᴇʀᴜᴋᴏ</b>
 ┃
 <b>╰━━━━━━━〔ᴘʟᴇᴀsʀ sᴜᴘᴘᴏʀᴛ〕</b>""",
   
