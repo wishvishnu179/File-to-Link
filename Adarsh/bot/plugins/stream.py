@@ -34,16 +34,14 @@ async def private_receive_handler(c: Client, m: Message):
         log_msg = await m.forward(chat_id=Var.BIN_CHANNEL)
         stream_link = f"{Var.URL}watch/{str(log_msg.id)}?hash={get_hash(log_msg)}"
         online_link = f"{Var.URL}{str(log_msg.id)}?hash={get_hash(log_msg)}"
-       
-        msg_text ="""<i><u>𝗬𝗼𝘂𝗿 𝗟𝗶𝗻𝗸 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱 !</u></i>\n\n<b>📂 Fɪʟᴇ ɴᴀᴍᴇ :</b> <i>{}</i>\n\n<b>📦 Fɪʟᴇ ꜱɪᴢᴇ :</b> <i>{}</i>\n\n<b>📥 Dᴏᴡɴʟᴏᴀᴅ :</b> <i>{}</i>\n\n<b> 🖥WATCH  :</b> <i>{}</i>\n\n<b>🚸 Nᴏᴛᴇ : LINK WON'T EXPIRE TILL I DELETE</b>"""
-
+        msg_text ="""<i><u>𝗬𝗼𝘂𝗿 𝗟𝗶𝗻𝗸 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱 !</u></i>\n\n<b>📂 𝑭𝒊𝒍𝒆 𝑵𝒂𝒎𝒆 :</b> <i>{}</i>\n\n<b>📦 𝑭𝒊𝒍𝒆 𝑺𝒊𝒛𝒆 :</b> <i>{}</i>\n\n<b>📥 𝑫𝒐𝒘𝒏𝒍𝒐𝒂𝒅 :</b> <i>{}</i>\n\n<b> 🖥𝑾𝒂𝒕𝒄𝒉  :</b> <i>{}</i>\n\n<b>🚸 𝐍𝐨𝐭𝐞 : 𝑳𝒊𝒏𝒌𝒔 𝑾𝒐𝒏𝒕 𝑬𝒙𝒑𝒊𝒓𝒆𝒔 𝑼𝒏𝒕𝒊𝒍𝒍 𝑾𝒆 𝑫𝒆𝒍𝒆𝒕𝒆 😎</b>"""
         await log_msg.reply_text(text=f"**RᴇQᴜᴇꜱᴛᴇᴅ ʙʏ :** [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n**Uꜱᴇʀ ɪᴅ :** `{m.from_user.id}`\n**Stream ʟɪɴᴋ :** {stream_link}", disable_web_page_preview=True,  quote=True)
         await m.reply_text(
             text=msg_text.format(get_name(log_msg), humanbytes(get_media_file_size(m)), online_link, stream_link),
             quote=True,
             disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("◉ sᴛʀᴇᴀᴍ ◉", url=stream_link), #Stream Link
-                                                InlineKeyboardButton('● ᴅᴏᴡɴʟᴏᴀᴅ ●', url=online_link)]]) #Download Link
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("◉ 𝙎𝙏𝙍𝙀𝘼𝙈 ◉", url=stream_link), #Stream Link
+                                                InlineKeyboardButton('● 𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿 ●', url=online_link)]]) #Download Link
         )
     except FloodWait as e:
         print(f"Sleeping for {str(e.x)}s")
@@ -70,8 +68,8 @@ async def channel_receive_handler(bot, broadcast):
             message_id=broadcast.id,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("◉ sᴛʀᴇᴀᴍ ◉", url=stream_link),
-                     InlineKeyboardButton('● ᴅᴏᴡɴʟᴏᴀᴅ ●', url=online_link)] 
+                    [InlineKeyboardButton("◉ 𝙎𝙏𝙍𝙀𝘼𝙈 ◉", url=stream_link),
+                     InlineKeyboardButton('● 𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿 ●', url=online_link)] 
                 ]
             )
         )
