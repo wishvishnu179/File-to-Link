@@ -30,9 +30,9 @@ async def start(b, m):
                     chat_id=m.chat.id,
                     text="ꜱᴏʀʀʏ ʏᴏᴜ ᴀʀᴇ ʙᴀɴɴᴇᴅ ᴛᴏ ᴜꜱᴇ ᴍᴇ ᴘʟᴇᴀꜱᴇ ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ ꜰᴏʀ ᴍᴏʀᴇ ᴅᴇᴛᴀɪʟꜱ.",
                     disable_web_page_preview=True
-            )
-             return
-     except UserNotParticipant:
+                )
+                return
+        except UserNotParticipant:
              await StreamBot.send_photo(
                 chat_id=m.chat.id,
                 photo="https://graph.org/file/a8095ab3c9202607e78ad.jpg",
@@ -53,7 +53,7 @@ async def start(b, m):
                 text="<b>ꜱᴏᴍᴇᴛʜɪɴɢ  ᴡᴇɴᴛ  ᴡʀᴏɴɢ  <a href='https://telegram.me/CodeXSupport'>ᴄʟɪᴄᴋ  ʜᴇʀᴇ  ꜰᴏʀ  ꜱᴜᴘᴘᴏʀᴛ</a></b>",
                 
                 disable_web_page_preview=True)
-            return          
+            return
     usr_cmd = m.text.split("_")[-1]
     if usr_cmd == "/start":
         await m.reply_text(
