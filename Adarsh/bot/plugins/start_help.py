@@ -54,10 +54,10 @@ async def start(b, m):
                 
                 disable_web_page_preview=True)
             return
-    await StreamBot.send_photo(
-            chat_id=m.chat.id,
-            photo="https://envs.sh/_Gn.jpg",
-            text=f"**𝐻𝑒𝑙𝑙𝑜...⚡\n\n𝐼𝐴𝑚 𝐴 𝑇𝑒𝑙𝑒𝑔𝑟𝑎𝑚 𝐹𝑖𝑙𝑒/𝑉𝑖𝑑𝑒𝑜 𝑇𝑜 𝑃𝑒𝑟𝑚𝑎𝑛𝑒𝑛𝑡 𝐿𝑖𝑛𝑘 𝑎𝑛𝑑 𝑆𝑡𝑟𝑒𝑎𝑚 𝐿𝑖𝑛𝑘 𝐺𝑒𝑛𝑒𝑟𝑎𝑡𝑜𝑟 𝐵𝑜𝑡.**\n\n**𝑆𝑒𝑛𝑑 𝑀𝑒 𝐴𝑛𝑦 𝑉𝑖𝑑𝑒𝑜/𝐹𝑖𝑙𝑒 𝑇𝑜 𝐺𝑒𝑡 𝐴 𝐷𝑖𝑟𝑒𝑐𝑡 𝐷𝑜𝑤𝑛𝑙𝑜𝑎𝑑 𝐿𝑖𝑛𝑘 𝑎𝑛𝑑 𝑆𝑡𝑟𝑒𝑎𝑚𝑎𝑏𝑙𝑒 𝐿𝑖𝑛𝑘...**",
+         usr_cmd = m.text.split("_")[-1]
+         usr_cmd == "/start":
+         await m.reply_text(
+            text="**𝐻𝑒𝑙𝑙𝑜...⚡\n\n𝐼𝐴𝑚 𝐴 𝑇𝑒𝑙𝑒𝑔𝑟𝑎𝑚 𝐹𝑖𝑙𝑒/𝑉𝑖𝑑𝑒𝑜 𝑇𝑜 𝑃𝑒𝑟𝑚𝑎𝑛𝑒𝑛𝑡 𝐿𝑖𝑛𝑘 𝑎𝑛𝑑 𝑆𝑡𝑟𝑒𝑎𝑚 𝐿𝑖𝑛𝑘 𝐺𝑒𝑛𝑒𝑟𝑎𝑡𝑜𝑟 𝐵𝑜𝑡.**\n\n**𝑆𝑒𝑛𝑑 𝑀𝑒 𝐴𝑛𝑦 𝑉𝑖𝑑𝑒𝑜/𝐹𝑖𝑙𝑒 𝑇𝑜 𝐺𝑒𝑡 𝐴 𝐷𝑖𝑟𝑒𝑐𝑡 𝐷𝑜𝑤𝑛𝑙𝑜𝑎𝑑 𝐿𝑖𝑛𝑘 𝑎𝑛𝑑 𝑆𝑡𝑟𝑒𝑎𝑚𝑎𝑏𝑙𝑒 𝐿𝑖𝑛𝑘...**",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton("𝑴𝒂𝒊𝒏 𝑪𝒉𝒂𝒏𝒏𝒆𝒍🎈", url="https://t.me/TGCinemaworld"), InlineKeyboardButton("𝑼𝒑𝒅𝒂𝒕𝒆𝒔 𝑪𝒉𝒂𝒏𝒏𝒆𝒍👿", url="https://t.me/tgcwupdates")],
@@ -65,6 +65,37 @@ async def start(b, m):
                 ]
             ),
             
+        )
+    else:
+
+        get_msg = await b.get_messages(chat_id=Var.BIN_CHANNEL, ids=int(usr_cmd))
+
+        file_size = None
+        if get_msg.video:
+            file_size = f"{humanbytes(get_msg.video.file_size)}"
+        elif get_msg.document:
+            file_size = f"{humanbytes(get_msg.document.file_size)}"
+        elif get_msg.audio:
+            file_size = f"{humanbytes(get_msg.audio.file_size)}"
+
+        file_name = None
+        if get_msg.video:
+            file_name = f"{get_msg.video.file_name}"
+        elif get_msg.document:
+            file_name = f"{get_msg.document.file_name}"
+        elif get_msg.audio:
+            file_name = f"{get_msg.audio.file_name}"
+
+        stream_link = "https://{}/{}".format(Var.FQDN, get_msg.id) if Var.ON_HEROKU or Var.NO_PORT else \
+            "http://{}:{}/{}".format(Var.FQDN,
+                                     Var.PORT,
+                                     get_msg.id)
+
+        msg_text = "**ᴛᴏᴜʀ ʟɪɴᴋ ɪs ɢᴇɴᴇʀᴀᴛᴇᴅ...⚡\n\n📧 ғɪʟᴇ ɴᴀᴍᴇ :-\n{}\n {}\n\n💌 ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ :- {}\n\n♻️ ᴛʜɪs ʟɪɴᴋ ɪs ᴘᴇʀᴍᴀɴᴇɴᴛ ᴀɴᴅ ᴡᴏɴ'ᴛ ɢᴇᴛ ᴇxᴘɪʀᴇᴅ ♻️\n\n<b>❖ YouTube.com/@itzjeol</b>**"
+        await m.reply_text(            
+            text=msg_text.format(file_name, file_size, stream_link),
+            
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("⚡ ᴅᴏᴡɴʟᴏᴀᴅ ɴᴏᴡ ⚡", url=stream_link)]])
         )
 
         
