@@ -30,7 +30,7 @@ async def start(b, m):
                     chat_id=m.chat.id,
                     text="ꜱᴏʀʀʏ ʏᴏᴜ ᴀʀᴇ ʙᴀɴɴᴇᴅ ᴛᴏ ᴜꜱᴇ ᴍᴇ ᴘʟᴇᴀꜱᴇ ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ ꜰᴏʀ ᴍᴏʀᴇ ᴅᴇᴛᴀɪʟꜱ.",
                     disable_web_page_preview=True
-             )
+            )
              return
      except UserNotParticipant:
              await StreamBot.send_photo(
