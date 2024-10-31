@@ -57,7 +57,7 @@ async def start(b, m):
     usr_cmd = m.text.split("_")[-1]
     if usr_cmd == "/start":
         await m.reply_text(
-            photo=random.choice(Var.PICS),
+            photo="https://envs.sh/_Gn.jpg",
             text="**𝐻𝑒𝑙𝑙𝑜...⚡\n\n𝐼𝐴𝑚 𝐴 𝑇𝑒𝑙𝑒𝑔𝑟𝑎𝑚 𝐹𝑖𝑙𝑒/𝑉𝑖𝑑𝑒𝑜 𝑇𝑜 𝑃𝑒𝑟𝑚𝑎𝑛𝑒𝑛𝑡 𝐿𝑖𝑛𝑘 𝑎𝑛𝑑 𝑆𝑡𝑟𝑒𝑎𝑚 𝐿𝑖𝑛𝑘 𝐺𝑒𝑛𝑒𝑟𝑎𝑡𝑜𝑟 𝐵𝑜𝑡.**\n\n**𝑆𝑒𝑛𝑑 𝑀𝑒 𝐴𝑛𝑦 𝑉𝑖𝑑𝑒𝑜/𝐹𝑖𝑙𝑒 𝑇𝑜 𝐺𝑒𝑡 𝐴 𝐷𝑖𝑟𝑒𝑐𝑡 𝐷𝑜𝑤𝑛𝑙𝑜𝑎𝑑 𝐿𝑖𝑛𝑘 𝑎𝑛𝑑 𝑆𝑡𝑟𝑒𝑎𝑚𝑎𝑏𝑙𝑒 𝐿𝑖𝑛𝑘...**",
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -110,7 +110,7 @@ async def help_handler(bot, message):
         )
               
     await message.reply_photo(
-            photo="https://graph.org/file/8e67ae4a3803f69a28218.jpg",
+            photo="https://envs.sh/_Gn.jpg",
             caption="**┣⪼ sᴇɴᴅ ᴍᴇ ᴀɴʏ ғɪʟᴇ/ᴠɪᴅᴇᴏ ᴛʜᴇɴ ɪ ᴡɪʟʟ ʏᴏᴜ ᴘᴇʀᴍᴀɴᴇɴᴛ sʜᴀʀᴇᴀʙʟᴇ ʟɪɴᴋ ᴏғ ɪᴛ...\n\n┣⪼ ᴛʜɪs ʟɪɴᴋ ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴏʀ ᴛᴏ sᴛʀᴇᴀᴍ ᴜsɪɴɢ ᴇxᴛᴇʀɴᴀʟ ᴠɪᴅᴇᴏ ᴘʟᴀʏᴇʀs ᴛʜʀᴏᴜɢʜ ᴍʏ sᴇʀᴠᴇʀs.\n\n┣⪼ ғᴏʀ sᴛʀᴇᴀᴍɪɴɢ ᴊᴜsᴛ ᴄᴏᴘʏ ᴛʜᴇ ʟɪɴᴋ ᴀɴᴅ ᴘᴀsᴛᴇ ɪᴛ ɪɴ ʏᴏᴜʀ ᴠɪᴅᴇᴏ ᴘʟᴀʏᴇʀ ᴛᴏ sᴛᴀʀᴛ sᴛʀᴇᴀᴍɪɴɢ.\n\n┣⪼ ᴛʜɪs ʙᴏᴛ ɪs ᴀʟsᴏ sᴜᴘᴘᴏʀᴛ ɪɴ ᴄʜᴀɴɴᴇʟ. ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ᴀs ᴀᴅᴍɪɴ ᴛᴏ ɢᴇᴛ ʀᴇᴀʟᴛɪᴍᴇ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ ғᴏʀ ᴇᴠᴇʀʏ ғɪʟᴇs/ᴠɪᴅᴇᴏs ᴘᴏsʏ../\n\n┣⪼ ғᴏʀ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ :- /about\n\n\nᴘʟᴇᴀsᴇ sʜᴀʀᴇ ᴀɴᴅ sᴜʙsᴄʀɪʙᴇ**", 
   
         
@@ -132,7 +132,7 @@ async def about_handler(bot, message):
             f"#NEW_USER: \n\nNew User [{message.from_user.first_name}](tg://user?id={message.from_user.id}) Started !!"
         )
     await message.reply_photo(
-            photo="https://graph.org/file/8e67ae4a3803f69a28218.jpg",
+            photo="https://envs.sh/_Gn.jpg",
             caption="""<b>sᴏᴍᴇ ʜɪᴅᴅᴇɴ ᴅᴇᴛᴀɪʟs😜</b>
 
 <b>╭━━━━━━━〔ғɪʟᴇ ᴛᴏ ʟɪɴᴋ ʙᴏᴛ〕</b>
