@@ -12,24 +12,6 @@ from pyrogram.errors import UserNotParticipant
 from Adarsh.utils.file_properties import get_name, get_hash, get_media_file_size
 db = Database(Var.DATABASE_URL, Var.name)
 from pyrogram.types import ReplyKeyboardMarkup
-
-@StreamBot.on_message(filters.command("start") & filters.incoming)
-async def start(client, message):
-    if not await db.is_user_exist(message.from_user.id):
-        await db.add_user(message.from_user.id, message.from_user.first_name)
-        await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
-    rm = InlineKeyboardMarkup(
-        [[
-            InlineKeyboardButton("✨ Update Channel", url="https://t.me/TGCINEMAWORLD")
-        ]] 
-    )
-    await client.send_message(
-        chat_id=message.from_user.id,
-        text=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
-        reply_markup=rm,
-        parse_mode=enums.ParseMode.HTML
-    )
-    return
   
                       
 @StreamBot.on_message(filters.command('start') & filters.private)
@@ -40,6 +22,38 @@ async def start(b, m):
             Var.BIN_CHANNEL,
             f"#NEW_USER: \n\nNew User [{m.from_user.first_name}](tg://user?id={m.from_user.id}) Started !!"
         )
+    if Var.UPDATES_CHANNEL != "None":
+        try:
+            user = await b.get_chat_member(Var.UPDATES_CHANNEL, m.chat.id)
+            if user.status == "kicked":
+                await b.send_message(
+                    chat_id=m.chat.id,
+                    text="ꜱᴏʀʀʏ ʏᴏᴜ ᴀʀᴇ ʙᴀɴɴᴇᴅ ᴛᴏ ᴜꜱᴇ ᴍᴇ ᴘʟᴇᴀꜱᴇ ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ ꜰᴏʀ ᴍᴏʀᴇ ᴅᴇᴛᴀɪʟꜱ.",
+                    disable_web_page_preview=True
+                )
+                return
+    except UserNotParticipant:
+             await StreamBot.send_photo(
+                chat_id=m.chat.id,
+                photo="https://graph.org/file/a8095ab3c9202607e78ad.jpg",
+                caption=f"{m.from_user.mention},\n\n<b><i>⚠️ ᴊᴏɪɴ ᴍʏ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴜsᴇ ᴍᴇ.</i></b>\n\n<i>ᴅᴜᴇ ᴛᴏ sᴇʀᴠᴇʀ ᴏᴠᴇʀʟᴏᴀᴅ, ᴏɴʟʏ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ sᴜʙsᴄʀɪʙᴇʀs ᴄᴀɴ ᴜsᴇ ᴛʜɪs ʙᴏᴛ 😊</i>",
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton("⛔   ᴜᴘᴅᴀᴛᴇꜱ  ᴄʜᴀɴɴᴇʟ   ⛔", url=f"https://telegram.me/{Var.UPDATES_CHANNEL}")
+                        ]
+                    ]
+                ),
+                
+            )
+             return
+        except Exception:
+            await b.send_message(
+                chat_id=m.chat.id,
+                text="<b>ꜱᴏᴍᴇᴛʜɪɴɢ  ᴡᴇɴᴛ  ᴡʀᴏɴɢ  <a href='https://telegram.me/CodeXSupport'>ᴄʟɪᴄᴋ  ʜᴇʀᴇ  ꜰᴏʀ  ꜱᴜᴘᴘᴏʀᴛ</a></b>",
+                
+                disable_web_page_preview=True)
+            return          
     usr_cmd = m.text.split("_")[-1]
     if usr_cmd == "/start":
         await m.reply_text(
