@@ -36,11 +36,11 @@ async def start(b, m):
              await StreamBot.send_photo(
                 chat_id=m.chat.id,
                 photo="https://graph.org/file/a8095ab3c9202607e78ad.jpg",
-                caption=f"{m.from_user.mention},\n\n<b><i>⚠️ ᴊᴏɪɴ ᴍʏ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴜsᴇ ᴍᴇ.</i></b>\n\n<i>ᴅᴜᴇ ᴛᴏ sᴇʀᴠᴇʀ ᴏᴠᴇʀʟᴏᴀᴅ, ᴏɴʟʏ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ sᴜʙsᴄʀɪʙᴇʀs ᴄᴀɴ ᴜsᴇ ᴛʜɪs ʙᴏᴛ 😊</i>",
+                caption=f"{m.from_user.mention},\n\n<b><i>⚠️ 𝑱𝒐𝒊𝒏 𝑴𝒚 𝑼𝒑𝒅𝒂𝒕𝒆𝒔 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 𝑻𝒐 𝑼𝒔𝒆 𝑴𝒆 ⚠️.</i></b>\n\n<i>ᴅᴜᴇ ᴛᴏ sᴇʀᴠᴇʀ ᴏᴠᴇʀʟᴏᴀᴅ, ᴏɴʟʏ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ sᴜʙsᴄʀɪʙᴇʀs ᴄᴀɴ ᴜsᴇ ᴛʜɪs ʙᴏᴛ 😊</i>",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("⛔   ᴜᴘᴅᴀᴛᴇꜱ  ᴄʜᴀɴɴᴇʟ   ⛔", url=f"https://telegram.me/{Var.UPDATES_CHANNEL}")
+                            InlineKeyboardButton("🔰  𝐔𝐩𝐝𝐚𝐭𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🔰", url=f"https://telegram.me/{Var.UPDATES_CHANNEL}")
                         ]
                     ]
                 ),
@@ -50,18 +50,18 @@ async def start(b, m):
         except Exception:
             await b.send_message(
                 chat_id=m.chat.id,
-                text="<b>ꜱᴏᴍᴇᴛʜɪɴɢ  ᴡᴇɴᴛ  ᴡʀᴏɴɢ  <a href='https://telegram.me/CodeXSupport'>ᴄʟɪᴄᴋ  ʜᴇʀᴇ  ꜰᴏʀ  ꜱᴜᴘᴘᴏʀᴛ</a></b>",
+                text="<b>ꜱᴏᴍᴇᴛʜɪɴɢ  ᴡᴇɴᴛ  ᴡʀᴏɴɢ  <a href='https://telegram.me/Vishnumbbot'>ᴄʟɪᴄᴋ  ʜᴇʀᴇ  ꜰᴏʀ  ꜱᴜᴘᴘᴏʀᴛ</a></b>",
                 
                 disable_web_page_preview=True)
             return
     usr_cmd = m.text.split("_")[-1]
     if usr_cmd == "/start":
         await m.reply_text(
-            text="**ʜᴇʟʟᴏ...⚡\n\nɪᴀᴍ ᴀ sɪᴍᴘʟᴇ ᴛᴇʟᴇɢʀᴀᴍ ғɪʟᴇ/ᴠɪᴅᴇᴏ ᴛᴏ ᴘᴇʀᴍᴀɴᴇɴᴛ ʟɪɴᴋ ᴀɴᴅ sᴛʀᴇᴀᴍ ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴛ.**\n\n**ᴜsᴇ /help ғᴏʀ ᴍᴏʀᴇ ᴅᴇᴛsɪʟs\n\nsᴇɴᴅ ᴍᴇ ᴀɴʏ ᴠɪᴅᴇᴏ / ғɪʟᴇ ᴛᴏ sᴇᴇ ᴍʏ ᴘᴏᴡᴇʀᴢ...**",
+            text="**𝐻𝑒𝑙𝑙𝑜...⚡\n\n𝐼𝐴𝑚 𝐴 𝑇𝑒𝑙𝑒𝑔𝑟𝑎𝑚 𝐹𝑖𝑙𝑒/𝑉𝑖𝑑𝑒𝑜 𝑇𝑜 𝑃𝑒𝑟𝑚𝑎𝑛𝑒𝑛𝑡 𝐿𝑖𝑛𝑘 𝑎𝑛𝑑 𝑆𝑡𝑟𝑒𝑎𝑚 𝐿𝑖𝑛𝑘 𝐺𝑒𝑛𝑒𝑟𝑎𝑡𝑜𝑟 𝐵𝑜𝑡.**\n\n**𝑆𝑒𝑛𝑑 𝑀𝑒 𝐴𝑛𝑦 𝑉𝑖𝑑𝑒𝑜/𝐹𝑖𝑙𝑒 𝑇𝑜 𝐺𝑒𝑡 𝐴 𝐷𝑖𝑟𝑒𝑐𝑡 𝐷𝑜𝑤𝑛𝑙𝑜𝑎𝑑 𝐿𝑖𝑛𝑘 𝑎𝑛𝑑 𝑆𝑡𝑟𝑒𝑎𝑚𝑎𝑏𝑙𝑒 𝐿𝑖𝑛𝑘...**",
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("⚡ UPDATES", url="https://t.me/TGCinemaworld"), InlineKeyboardButton("⚡ SUPPORT", url="https://t.me/Tgcinemaworld")],
-                    [InlineKeyboardButton("OWNER", url="https://t.me/Vishnudhfm14")]
+                    [InlineKeyboardButton("𝑴𝒂𝒊𝒏 𝑪𝒉𝒂𝒏𝒏𝒆𝒍🎈", url="https://t.me/TGCinemaworld"), InlineKeyboardButton("𝑼𝒑𝒅𝒂𝒕𝒆𝒔 𝑪𝒉𝒂𝒏𝒏𝒆𝒍👿", url="https://t.me/tgcwupdates")],
+                    [InlineKeyboardButton("😽𝑴𝒚 𝑪𝒓𝒆𝒂𝒕𝒐𝒓💋", url="https://t.me/Vishnumbbot")]
                 ]
             ),
             
@@ -115,8 +115,8 @@ async def help_handler(bot, message):
         
         reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("⚡ UPDATES ⚡", url="https://t.me/Tgcinemaworld"), InlineKeyboardButton("⚡ SUPPORT ⚡", url="https://t.me/Tgcinemaworld")],
-                    [InlineKeyboardButton("OWNER", url="https://t.me/vishnudhfm14")]
+                    [InlineKeyboardButton("𝑴𝒂𝒊𝒏 𝑪𝒉𝒂𝒏𝒏𝒆𝒍🎈", url="https://t.me/TGCinemaworld"), InlineKeyboardButton("𝑼𝒑𝒅𝒂𝒕𝒆𝒔 𝑪𝒉𝒂𝒏𝒏𝒆𝒍👿", url="https://t.me/tgcwupdates")],
+                    [InlineKeyboardButton("😽𝑴𝒚 𝑪𝒓𝒆𝒂𝒕𝒐𝒓💋", url="https://t.me/Vishnumbbot")]
                 ]
             ),
             
@@ -147,8 +147,8 @@ async def about_handler(bot, message):
         
         reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("⚡ UPDATES ⚡", url="https://t.me/TGCinemaworld"), InlineKeyboardButton("⚡ SUPPORT ⚡", url="https://t.me/Tgcinemaworld")],
-                    [InlineKeyboardButton("OWNER", url="https://t.me/vishnudhfm14")]
+                    [InlineKeyboardButton("𝑴𝒂𝒊𝒏 𝑪𝒉𝒂𝒏𝒏𝒆𝒍🎈", url="https://t.me/TGCinemaworld"), InlineKeyboardButton("𝑼𝒑𝒅𝒂𝒕𝒆𝒔 𝑪𝒉𝒂𝒏𝒏𝒆𝒍👿", url="https://t.me/tgcwupdates")],
+                    [InlineKeyboardButton("😽𝑴𝒚 𝑪𝒓𝒆𝒂𝒕𝒐𝒓💋", url="https://t.me/Vishnumbbot")]
                  ]
             ),
             
