@@ -10,6 +10,7 @@ StreamBot = Client(
     api_hash=Var.API_HASH,
     bot_token=Var.BOT_TOKEN,
     sleep_threshold=Var.SLEEP_THRESHOLD,
+    start_pic=var.START_PIC
     workers=Var.WORKERS
 )
 
